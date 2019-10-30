@@ -1,6 +1,0 @@
-framework module Pods_Coursera_Scheduler {
-  umbrella header "Pods-Coursera Scheduler-umbrella.h"
-
-  export *
-  module * { export * }
-}
