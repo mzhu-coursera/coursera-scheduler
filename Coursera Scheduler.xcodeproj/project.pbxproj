@@ -13,9 +13,12 @@
 		398175012368D7AE00E449F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398175002368D7AE00E449F8 /* Assets.xcassets */; };
 		398175042368D7AE00E449F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398175032368D7AE00E449F8 /* Preview Assets.xcassets */; };
 		398175072368D7AE00E449F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398175052368D7AE00E449F8 /* LaunchScreen.storyboard */; };
+		5ECD87A18CE8D0F2C35C62FF /* Pods_Coursera_Scheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F50A3BF0CDAA38DC1DA2A96 /* Pods_Coursera_Scheduler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F50A3BF0CDAA38DC1DA2A96 /* Pods_Coursera_Scheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coursera_Scheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE936B5DDA6090F7EAF68D5 /* Pods-Coursera Scheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coursera Scheduler.release.xcconfig"; path = "Target Support Files/Pods-Coursera Scheduler/Pods-Coursera Scheduler.release.xcconfig"; sourceTree = "<group>"; };
 		398174F72368D7AC00E449F8 /* Coursera Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coursera Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		398174FA2368D7AC00E449F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		398174FC2368D7AC00E449F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		398175032368D7AE00E449F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		398175062368D7AE00E449F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		398175082368D7AE00E449F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC855D797D9364FC1441763 /* Pods-Coursera Scheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coursera Scheduler.debug.xcconfig"; path = "Target Support Files/Pods-Coursera Scheduler/Pods-Coursera Scheduler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECD87A18CE8D0F2C35C62FF /* Pods_Coursera_Scheduler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05424AC5C6AE69117456013D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CC855D797D9364FC1441763 /* Pods-Coursera Scheduler.debug.xcconfig */,
+				2CE936B5DDA6090F7EAF68D5 /* Pods-Coursera Scheduler.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		398174EE2368D7AC00E449F8 = {
 			isa = PBXGroup;
 			children = (
 				398174F92368D7AC00E449F8 /* Coursera Scheduler */,
 				398174F82368D7AC00E449F8 /* Products */,
+				05424AC5C6AE69117456013D /* Pods */,
+				9D2E8B549E3474053E65E109 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9D2E8B549E3474053E65E109 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F50A3BF0CDAA38DC1DA2A96 /* Pods_Coursera_Scheduler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3981750B2368D7AE00E449F8 /* Build configuration list for PBXNativeTarget "Coursera Scheduler" */;
 			buildPhases = (
+				809DF3B9BB9539A879C66DCC /* [CP] Check Pods Manifest.lock */,
 				398174F32368D7AC00E449F8 /* Sources */,
 				398174F42368D7AC00E449F8 /* Frameworks */,
 				398174F52368D7AC00E449F8 /* Resources */,
+				C69F4B6EDB7632351BB83062 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		809DF3B9BB9539A879C66DCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coursera Scheduler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69F4B6EDB7632351BB83062 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coursera Scheduler/Pods-Coursera Scheduler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coursera Scheduler/Pods-Coursera Scheduler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coursera Scheduler/Pods-Coursera Scheduler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		398174F32368D7AC00E449F8 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3981750C2368D7AE00E449F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC855D797D9364FC1441763 /* Pods-Coursera Scheduler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +371,7 @@
 		};
 		3981750D2368D7AE00E449F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE936B5DDA6090F7EAF68D5 /* Pods-Coursera Scheduler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
